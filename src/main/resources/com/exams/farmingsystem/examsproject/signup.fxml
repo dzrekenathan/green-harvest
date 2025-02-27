@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" rotate="-3.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exams.farmingsystem.examsproject.SignupController">
+    <items>
+        <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <ImageView fx:id="brandingImageView" fitHeight="498.0" fitWidth="402.0" layoutX="-4.0" layoutY="1.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@images/farmland2.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Pane prefHeight="398.0" prefWidth="273.0">
+            <children>
+                <Label layoutX="173.0" layoutY="86.0" text="Create an Account">
+                    <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="firstnameTF" layoutX="162.0" layoutY="151.0" prefHeight="25.0" prefWidth="195.0" />
+                <TextField fx:id="lastnameTF" layoutX="162.0" layoutY="202.0" prefHeight="25.0" prefWidth="195.0" />
+                <TextField fx:id="emailTF" layoutX="162.0" layoutY="254.0" prefHeight="25.0" prefWidth="195.0" />
+                <PasswordField fx:id="passwordTF" layoutX="162.0" layoutY="303.0" prefHeight="25.0" prefWidth="195.0" />
+                <PasswordField fx:id="confirmPasswordTF" layoutX="162.0" layoutY="350.0" prefHeight="25.0" prefWidth="195.0" />
+                <Button fx:id="createAccountBtn" layoutX="39.0" layoutY="402.0" mnemonicParsing="false" onAction="#signUpUser" prefHeight="25.0" prefWidth="317.0" text="CREATE ACCOUNT">
+                    <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+                <Label layoutX="39.0" layoutY="155.0" text="First Name">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="40.0" layoutY="206.0" text="Last Name">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="43.0" layoutY="258.0" text="Email">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="43.0" layoutY="307.0" text="Password">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="39.0" layoutY="354.0" text="Confirm Password">
+                    <font>
+                        <Font name="Segoe UI" size="13.0" />
+                    </font>
+                </Label>
+                <Label layoutX="74.0" layoutY="448.0" text="Already have an account?">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                </Label>
+                <Label fx:id="loginLBL" layoutX="217.0" layoutY="448.0" onMouseClicked="#openLoginPage" text="Login" textAlignment="CENTER" textFill="#260080">
+                    <font>
+                        <Font name="Segoe UI" size="12.0" />
+                    </font>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <Label layoutX="69.0" layoutY="26.0" text="GREEN HARVEST" textFill="GREEN">
+                    <font>
+                        <Font name="Segoe UI Bold" size="33.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </items>
+    <rotationAxis>
+        <Point3D />
+    </rotationAxis>
+</SplitPane>

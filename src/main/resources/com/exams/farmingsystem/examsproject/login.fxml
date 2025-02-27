@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exams.farmingsystem.examsproject.LoginController">
+    <children>
+        <Pane layoutY="-3.0" prefHeight="608.0" prefWidth="900.0">
+            <children>
+                <ImageView fx:id="loginBrandingView" fitHeight="608.0" fitWidth="478.0" layoutY="2.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@images/farmland3.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="27.0" layoutY="91.0" prefHeight="76.0" prefWidth="425.0" text="GREEN HARVEST" textFill="GREEN">
+                    <font>
+                        <Font name="Segoe UI Bold" size="49.0" />
+                    </font>
+                </Label>
+                <Label layoutX="649.0" layoutY="199.0" text="Login">
+                    <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label fx:id="errorMessageLabel" layoutX="562.0" layoutY="263.0" prefHeight="20.0" prefWidth="239.0" textAlignment="CENTER" textFill="#bf0404">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="537.0" layoutY="297.0" text="Email">
+                    <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="535.0" layoutY="380.0" text="Password">
+                    <font>
+                        <Font name="Segoe UI Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="580.0" layoutY="535.0" text="Don't have an account?" />
+                <Label fx:id="signUpLBL" layoutX="711.0" layoutY="535.0" onMouseClicked="#openSignUpPage" text="Sign up" textFill="#220080">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Label>
+                <Button fx:id="signInBTN" layoutX="534.0" layoutY="460.0" mnemonicParsing="false" onAction="#loginUser" prefHeight="29.0" prefWidth="294.0" text="LOGIN">
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                    <font>
+                        <Font name="System Bold" size="15.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="loginEmailTF" layoutX="537.0" layoutY="328.0" prefHeight="29.0" prefWidth="288.0" promptText="example@gmail.com" />
+                <PasswordField fx:id="loginPasswordTF" layoutX="534.0" layoutY="408.0" prefHeight="25.0" prefWidth="294.0" promptText="Password" />
+                <ImageView fitHeight="109.0" fitWidth="138.0" layoutX="633.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/lock.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

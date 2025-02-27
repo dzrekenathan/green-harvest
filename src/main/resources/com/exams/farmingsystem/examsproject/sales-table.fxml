@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="518.0" prefWidth="808.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exams.farmingsystem.examsproject.SalesTableController">
+   <children>
+      <Pane prefHeight="518.0" prefWidth="808.0">
+              <children>
+                  <Pane prefHeight="722.0" prefWidth="1018.0" style="-fx-background-color: white;">
+                      <children>
+                          <Label layoutX="494.0" layoutY="52.0" text="All Sales">
+                              <font>
+                                  <Font name="Segoe UI Bold" size="33.0" />
+                              </font>
+                          </Label>
+                          <TableView fx:id="allSalesTable" layoutX="92.0" layoutY="132.0" prefHeight="552.0" prefWidth="835.0">
+                              <columns>
+                                  <TableColumn fx:id="salesProdNameCol" prefWidth="111.20001220703125" text="Product Name" />
+                                  <TableColumn fx:id="salesProdIdCol" prefWidth="128.0" text="Product ID" />
+                                  <TableColumn fx:id="salesIdCol" prefWidth="120.79998779296875" text="Sales ID" />
+                                  <TableColumn fx:id="salesDateCol" prefWidth="160.79998779296875" text="Sales Date" />
+                                  <TableColumn fx:id="salesQuantiyCol" prefWidth="144.800048828125" text="Sales Quantity" />
+                                  <TableColumn fx:id="salesAmountCol" prefWidth="164.0001220703125" text="Sales Amount" />
+                              </columns>
+                          </TableView>
+                  <Label layoutX="39.0" layoutY="59.0" text="GREEN HARVEST" textFill="GREEN">
+                     <font>
+                        <Font name="Segoe UI Bold" size="33.0" />
+                     </font>
+                  </Label>
+                      </children>
+                  </Pane>
+              </children>
+      </Pane>
+   </children>
+</AnchorPane>

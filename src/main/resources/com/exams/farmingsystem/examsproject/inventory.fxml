@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exams.farmingsystem.examsproject.InventoryController">
+    <children>
+        <Pane prefHeight="646.0" prefWidth="818.0">
+            <children>
+                <TextField fx:id="searchField" layoutX="409.0" layoutY="23.0" prefHeight="35.0" prefWidth="395.0" promptText="Search..." />
+                <Label layoutX="39.0" layoutY="86.0" text="Product">
+                    <font>
+                        <Font name="Segoe UI Bold" size="27.0" />
+                    </font>
+                </Label>
+
+                <TableView fx:id="productTable" layoutX="39.0" layoutY="131.0" prefHeight="480.0" prefWidth="761.0">
+                    <columns>
+                        <TableColumn fx:id="productName" prefWidth="133.59998321533203" text="Product Name" />
+                        <TableColumn fx:id="productId" prefWidth="107.20001220703125" text="Product ID" />
+                        <TableColumn fx:id="productPrice" prefWidth="92.79998779296875" text="Price" />
+                        <TableColumn fx:id="productStock" prefWidth="133.59991455078125" text="Stock" />
+                        <TableColumn fx:id="unit" prefWidth="126.39999389648438" text="Unit" />
+                        <TableColumn fx:id="actions" prefWidth="168.79998779296875" text="Action" />
+                    </columns>
+                </TableView>
+                <ImageView fitHeight="71.0" fitWidth="79.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/logo.jpg" />
+                    </image>
+                </ImageView>
+                <Label layoutX="138.0" layoutY="30.0" text="GREEN" textFill="GREEN">
+                    <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                    </font>
+                </Label>
+                <Label layoutX="232.0" layoutY="30.0" text="FARM">
+                    <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </children>
+</HBox>
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+
+<!--<?import javafx.scene.control.Label?>-->
+<!--<?import javafx.scene.control.TableColumn?>-->
+<!--<?import javafx.scene.control.TableView?>-->
+<!--<?import javafx.scene.control.TextField?>-->
+<!--<?import javafx.scene.image.Image?>-->
+<!--<?import javafx.scene.image.ImageView?>-->
+<!--<?import javafx.scene.layout.HBox?>-->
+<!--<?import javafx.scene.layout.Pane?>-->
+<!--<?import javafx.scene.text.Font?>-->
+
+<!--<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="646.0" prefWidth="827.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.exams.farmingsystem.examsproject.InventoryController">-->
+<!--    <children>-->
+<!--        <Pane prefHeight="646.0" prefWidth="818.0">-->
+<!--            <children>-->
+<!--                <TextField layoutX="409.0" layoutY="23.0" prefHeight="35.0" prefWidth="395.0" promptText="Search..." />-->
+<!--                <Label layoutX="39.0" layoutY="86.0" text="Product">-->
+<!--                    <font>-->
+<!--                        <Font name="Segoe UI Bold" size="27.0" />-->
+<!--                    </font>-->
+<!--                </Label>-->
+
+<!--                <TableView fx:id="productTable" layoutX="39.0" layoutY="131.0" prefHeight="480.0" prefWidth="761.0">-->
+<!--                    <columns>-->
+<!--                        <TableColumn fx:id="productName" prefWidth="133.59998321533203" text="Product Name" />-->
+<!--                        <TableColumn fx:id="productId" prefWidth="107.20001220703125" text="Product ID" />-->
+<!--                        <TableColumn fx:id="productPrice" prefWidth="92.79998779296875" text="Price" />-->
+<!--                        <TableColumn fx:id="productStock" prefWidth="133.59991455078125" text="Stock" />-->
+<!--                        <TableColumn fx:id="unit" prefWidth="126.39999389648438" text="Unit" />-->
+<!--                        <TableColumn fx:id="actions" prefWidth="168.79998779296875" text="Action" />-->
+<!--                    </columns>-->
+<!--                </TableView>-->
+<!--                  <ImageView fitHeight="71.0" fitWidth="79.0" layoutX="39.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">-->
+<!--                      <image>-->
+<!--                          <Image url="@images/logo.jpg" />-->
+<!--                      </image>-->
+<!--                  </ImageView>-->
+<!--                  <Label layoutX="138.0" layoutY="30.0" text="GREEN" textFill="GREEN">-->
+<!--                      <font>-->
+<!--                          <Font name="Segoe UI Bold" size="24.0" />-->
+<!--                      </font>-->
+<!--                  </Label>-->
+<!--                  <Label layoutX="232.0" layoutY="30.0" text="FARM">-->
+<!--                      <font>-->
+<!--                          <Font name="Segoe UI Bold" size="24.0" />-->
+<!--                      </font>-->
+<!--                  </Label>-->
+<!--            </children>-->
+<!--        </Pane>-->
+<!--    </children>-->
+<!--</HBox>-->
